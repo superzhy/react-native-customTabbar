@@ -13,22 +13,16 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Home Screen</Text>
+        <Text>首页</Text>
       </View>
     );
   }
 }
 class MineScreen extends React.Component {
   render() {
-    const {navigation} = this.props;
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text
-          onPress={() => {
-            navigation.navigate('Other');
-          }}>
-          Mine Screen
-        </Text>
+        <Text>我的</Text>
       </View>
     );
   }
@@ -37,7 +31,7 @@ class OtherScreen extends React.Component {
   render() {
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>other Screen</Text>
+        <Text>其他</Text>
       </View>
     );
   }
